@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+  "name": "Wote",
+  "version": "0.1",
+  "description": "avoid chinese items online",
+  "icons": {
+    "128": "icons/chinaBad-128.png",
+    "48": "icons/chinaBad-48.png",
+    "16": "icons/chinaBad-16.png"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "notifications",
+    "contextMenus"
+  ],
+  "browser_action": {
+    "default_popup": "src/html/popup.html"
+  },
+  "background": {
+    "scripts": [
+      "src/js/eventPage.js"
+    ],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.amazon.in/*"
+      ],
+      "js": [
+        "src/js/content.js"
+      ]
+    }
+  ],
+  "options_page": "src/html/options.html"
+}
