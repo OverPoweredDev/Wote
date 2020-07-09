@@ -1,5 +1,5 @@
 const companyNames = {
-    blackList: ['Vivo', 'Mi', 'RedMi', 'Senyoo', 'Fengshui', 'Fashionury', 'PAKME', 'Hello'],
+    blackList: ['Vivo', 'Mi', 'RedMi', 'Senyoo', 'Fengshui', 'Fashionury', 'PAKME', 'Hello', 'Lenovo', 'Huawei', 'Haier', 'Gree', 'Robam', 'UBTECH', 'Meizu', 'Aigu', 'ERKE', 'Eno', 'Meizu', 'Tencent', 'TP link', 'Midea', 'DJI', 'ZTE', 'Xiaomi', 'Dabao'],
     whiteList: ['boAt', 'SanDisk', 'Oye', 'JGD']
 };
 
